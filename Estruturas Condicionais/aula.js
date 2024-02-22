@@ -10,5 +10,14 @@ let numero = 10;
 
 for (let i = 1; i <= numero; i++) {
   let resultado = i % 2 === 0;
-  console.log(`O numero ${i} é ${resultado == true ? "par" : "impar"}`);
+  console.log(`O numero ${i} é ${resultado ? "par" : "impar"}`);
 }
+
+// for (let i = 1; i <= numero; i++) {
+//   let resultado = i % 2 === 0;
+//   if (resultado) {
+//     console.log(`O numero ${i} é par`);
+//   } else {
+//     console.log(`O numero ${i} é impar`);
+//   }
+// }
