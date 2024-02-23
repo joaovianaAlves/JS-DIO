@@ -13,11 +13,14 @@ for (let i = 1; i <= numero; i++) {
   console.log(`O numero ${i} é ${resultado ? "par" : "impar"}`);
 }
 
-// for (let i = 1; i <= numero; i++) {
-//   let resultado = i % 2 === 0;
-//   if (resultado) {
-//     console.log(`O numero ${i} é par`);
-//   } else {
-//     console.log(`O numero ${i} é impar`);
-//   }
-// }
+for (let i = 1; i <= numero; i++) {
+  let resultado = i % 2 === 0;
+
+  if (numero === 0) {
+    console.log("O numero e Invalido");
+  } else if (resultado) {
+    console.log(`O numero ${i} é par`);
+  } else {
+    console.log(`O numero ${i} é impar`);
+  }
+}
