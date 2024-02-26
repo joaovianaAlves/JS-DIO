@@ -27,3 +27,6 @@ const gol = new Carro("fiat", "preto", 200, 15);
 gol.gastoViagem();
 
 //Ex 02
+class Pessoa {
+  constructor() {}
+}
