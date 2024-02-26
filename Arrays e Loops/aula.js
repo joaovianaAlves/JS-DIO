@@ -5,9 +5,20 @@
 // alunos.shift();
 // console.log(alunos);
 
-const notas = [];
+// const nome = "joao";
 
-for (let i = 0; i <= 10; i++) {
-  notas[i] = i;
+// for (let i = 0; i < nome.length; i++) {
+//   let letra = nome[i];
+//   console.log(letra);
+// }
+
+const notas = [8, 10, 10, 2, 5, 6];
+
+let soma = 0;
+
+for (let i = 0; i < notas.length; i++) {
+  const nota = notas[i];
+  soma += nota;
 }
-console.log(notas);
+let media = soma / notas.length;
+console.log(media.toFixed());
