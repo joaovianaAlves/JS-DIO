@@ -28,5 +28,30 @@ gol.gastoViagem();
 
 //Ex 02
 class Pessoa {
-  constructor() {}
+  constructor(nome, peso, altura) {
+    this.nome = nome;
+    this.peso = peso;
+    this.altura = altura;
+  }
+
+  calcularImc() {
+    let imc = this.peso / Math.pow(this.altura, 2);
+    return imc;
+  }
+
+  classificarImc() {
+    let imc = this.calcularImc();
+    if (imc <= 18.5) {
+      return console.log("Baixo peso");
+    } else if (imc <= 24.99) {
+      return console.log("Normal");
+    } else if (imc <= 29.99) {
+      return console.log("Sobrepeso");
+    } else {
+      return console.log("Obesidade");
+    }
+  }
 }
+
+const joao = new Pessoa("joao", 78, 1.71);
+joao.classificarImc();
